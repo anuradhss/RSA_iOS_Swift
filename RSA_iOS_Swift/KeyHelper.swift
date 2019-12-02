@@ -104,7 +104,7 @@ extension KeyHelper {
     private func signUsingPrivate(_ text: String, _ key: SecKey) -> String? {
         var digest = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
         let data = text.data(using: .utf8)!
-
+        
         let _ = digest.withUnsafeMutableBytes { digestBytes in
             data.withUnsafeBytes { dataBytes in
                 CC_SHA256(dataBytes, CC_LONG(data.count), digestBytes)
