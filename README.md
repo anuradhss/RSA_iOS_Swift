@@ -13,5 +13,5 @@
 - Then `Run`.
 
 ### Author
-- [Anuradh Caldera ](htts://anuradhss.github.io)
+- [Anuradh Caldera](https://anuradhss.github.io)
 - caldera.ca.90@gmail.com
