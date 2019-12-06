@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .white
+        
         generateKeyPairAndSignWithPrivateKey { [weak self] status in
             self?.signedStatus = status
             print("Signing Process : ", self?.signedStatus ?? false)
